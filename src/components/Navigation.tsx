@@ -48,15 +48,6 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button 
-              variant="cta" 
-              size="sm" 
-              className="ml-4"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,15 +74,6 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button 
-                variant="cta" 
-                size="sm" 
-                className="w-fit"
-                onClick={() => scrollToSection('contact')}
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
             </div>
           </div>
         )}
