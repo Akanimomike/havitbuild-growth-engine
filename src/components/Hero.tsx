@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
+import { LeadCaptureForm } from '@/components/LeadCaptureForm';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
@@ -39,10 +39,7 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center mb-12">
-            <Button variant="hero" size="lg">
-              Start Automating Your Business
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <LeadCaptureForm variant="hero" />
           </div>
 
           {/* Trust Indicators */}

@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Calendar, MessageCircle } from 'lucide-react';
+import { Calendar, MessageCircle } from 'lucide-react';
+import { LeadCaptureForm } from '@/components/LeadCaptureForm';
 
 const CTASection = () => {
   return (
@@ -17,10 +18,15 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button variant="cta" size="lg" className="bg-accent hover:bg-accent-glow">
-              <Calendar className="mr-2 h-5 w-5" />
-              Book a Free Strategy Call
-            </Button>
+            <LeadCaptureForm 
+              variant="cta"
+              trigger={
+                <Button variant="cta" size="lg" className="bg-accent hover:bg-accent-glow">
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Book a Free Strategy Call
+                </Button>
+              }
+            />
             <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
               <MessageCircle className="mr-2 h-5 w-5" />
               Chat With Our Team
