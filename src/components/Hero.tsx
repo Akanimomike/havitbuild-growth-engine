@@ -1,13 +1,23 @@
 import { CheckCircle, Zap, Cpu } from 'lucide-react';
 import { LeadCaptureForm } from '@/components/LeadCaptureForm';
 import heroBg from '@/assets/hero-bg.jpg';
+import aiHeroBg from '@/assets/ai-hero-bg.jpg';
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      {/* Futuristic Background Pattern */}
+      {/* AI Hero Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-hero"></div>
+        <img 
+          src={aiHeroBg} 
+          alt="AI-powered business automation" 
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
+      </div>
+
+      {/* Futuristic Background Pattern */}
+      <div className="absolute inset-0 z-5">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
