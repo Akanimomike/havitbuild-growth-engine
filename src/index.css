@@ -2,60 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Havitbuild Design System - Modern tech-inspired palette
+/* Havit Build Futuristic AI Design System
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 13% 18%;
+    /* Futuristic AI Color Palette */
+    --background: 230 35% 7%; /* Deep Space Navy */
+    --foreground: 0 0% 81%; /* Soft Silver text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card: 230 35% 9%;
+    --card-foreground: 0 0% 81%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover: 230 35% 9%;
+    --popover-foreground: 0 0% 81%;
 
-    /* Tech blue primary - professional and trustworthy */
-    --primary: 215 85% 45%;
+    /* Electric Blue - Primary brand color */
+    --primary: 217 91% 60%; /* Electric Blue #1A73E8 */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 215 85% 65%;
+    --primary-glow: 217 91% 70%;
 
-    /* Light grays for sections */
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 13% 18%;
+    /* Secondary for subtle elements */
+    --secondary: 230 35% 12%;
+    --secondary-foreground: 0 0% 81%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 230 35% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    /* Electric accent for CTAs */
-    --accent: 280 89% 60%;
+    /* Neon Purple - Accent for CTAs and highlights */
+    --accent: 280 77% 65%; /* Neon Purple #9D4EDD */
     --accent-foreground: 0 0% 100%;
-    --accent-glow: 280 89% 75%;
+    --accent-glow: 280 77% 75%;
+
+    /* Aqua Glow - Special effects */
+    --aqua: 174 100% 48%; /* Aqua Glow #00F5D4 */
+    --aqua-glow: 174 100% 60%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 215 85% 45%;
+    --border: 230 35% 15%;
+    --input: 230 35% 12%;
+    --ring: 217 91% 60%;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(215 85% 45%), hsl(215 85% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(280 89% 60%), hsl(280 89% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 26% 14%) 0%, hsl(215 85% 45%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 98%) 100%);
+    /* Futuristic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(280 77% 65%)); /* Electric Blue to Neon Purple */
+    --gradient-accent: linear-gradient(135deg, hsl(280 77% 65%), hsl(174 100% 48%)); /* Neon Purple to Aqua */
+    --gradient-hero: linear-gradient(135deg, hsl(230 35% 7%) 0%, hsl(217 91% 60%) 100%); /* Deep Navy to Electric Blue */
+    --gradient-section: linear-gradient(180deg, hsl(230 35% 8%) 0%, hsl(230 35% 10%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(230 35% 9%), hsl(230 35% 12%));
     
-    --shadow-soft: 0 4px 6px -1px hsl(220 13% 18% / 0.1), 0 2px 4px -1px hsl(220 13% 18% / 0.06);
-    --shadow-medium: 0 10px 15px -3px hsl(220 13% 18% / 0.1), 0 4px 6px -2px hsl(220 13% 18% / 0.05);
-    --shadow-glow: 0 0 0 1px hsl(215 85% 45% / 0.05), 0 1px 3px 0 hsl(215 85% 45% / 0.1), 0 1px 2px 0 hsl(215 85% 45% / 0.06);
-    --shadow-accent: 0 0 20px hsl(280 89% 60% / 0.3);
+    /* Glowing Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(230 35% 5% / 0.3), 0 2px 4px -1px hsl(230 35% 5% / 0.2);
+    --shadow-medium: 0 10px 15px -3px hsl(230 35% 5% / 0.4), 0 4px 6px -2px hsl(230 35% 5% / 0.3);
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3), 0 0 40px hsl(217 91% 60% / 0.1);
+    --shadow-accent: 0 0 30px hsl(280 77% 65% / 0.4), 0 0 60px hsl(280 77% 65% / 0.2);
+    --shadow-aqua: 0 0 25px hsl(174 100% 48% / 0.3);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -74,42 +82,24 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .light {
+    /* Light theme (inverted for contrast) */
+    --background: 0 0% 100%;
+    --foreground: 230 35% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 230 35% 15%;
+    
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 230 35% 15%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    
+    /* Keep the same AI colors for consistency */
+    --primary: 217 91% 60%;
+    --accent: 280 77% 65%;
+    --aqua: 174 100% 48%;
   }
 }
 
@@ -119,6 +109,28 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  /* Typography Classes */
+  .font-orbitron {
+    font-family: 'Orbitron', monospace;
+  }
+  
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Futuristic Text Effects */
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+  
+  .text-neon {
+    text-shadow: 0 0 5px hsl(var(--accent) / 0.8), 0 0 10px hsl(var(--accent) / 0.6), 0 0 15px hsl(var(--accent) / 0.4);
   }
 }

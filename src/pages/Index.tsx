@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import StatsSection from '@/components/StatsSection';
 import ServicesSection from '@/components/ServicesSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
@@ -18,6 +19,9 @@ const Index = () => {
       </div>
       <div id="services">
         <ServicesSection />
+      </div>
+      <div id="why-choose-us">
+        <WhyChooseUs />
       </div>
       <div id="testimonials">
         <TestimonialsSection />

@@ -1,67 +1,62 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Globe, Users, Share2, Workflow, Bot } from 'lucide-react';
+import { ArrowRight, Globe, Brain, Workflow, Bot, Zap } from 'lucide-react';
 import websiteImg from '@/assets/website-creation.jpg';
 import leadGenImg from '@/assets/lead-generation.jpg';
-import socialImg from '@/assets/social-media.jpg';
 import automationImg from '@/assets/automation.jpg';
 import aiImg from '@/assets/ai-agents.jpg';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Globe,
-      title: "Website Creation",
-      description: "Fully responsive, SEO-optimized websites built for conversion and lead capture.",
-      image: websiteImg,
-      features: ["Mobile-First Design", "SEO Optimization", "Lead Capture Forms", "Analytics Setup"],
-      price: "Starting at $2,997"
-    },
-    {
-      icon: Users,
-      title: "Lead Generation",
-      description: "High-converting lead capture funnels with automated email flows and CRM integration.",
-      image: leadGenImg,
-      features: ["Conversion Funnels", "Email Automation", "CRM Integration", "Lead Magnets"],
-      price: "Starting at $1,997"
-    },
-    {
-      icon: Share2,
-      title: "Social Media Management",
-      description: "Automated content scheduling with AI suggestions and detailed analytics tracking.",
-      image: socialImg,
-      features: ["Content Scheduling", "AI Content Ideas", "Multi-Platform", "Analytics Reports"],
-      price: "Starting at $997/mo"
+      icon: Brain,
+      title: "AI-Powered Chatbots",
+      description: "Intelligent conversational AI that handles customer support and lead qualification 24/7.",
+      image: aiImg,
+      features: ["Natural Language Processing", "Multi-Platform Integration", "Smart Lead Scoring", "Learning Algorithms"],
+      price: "Starting at $997"
     },
     {
       icon: Workflow,
       title: "Workflow Automation",
-      description: "Streamline operations with custom workflows for invoicing, onboarding, and more.",
+      description: "Streamline operations with intelligent automation that eliminates manual tasks.",
       image: automationImg,
-      features: ["Custom Workflows", "CRM Automation", "Invoice Generation", "Booking Systems"],
+      features: ["Process Intelligence", "API Integrations", "Real-time Monitoring", "Scalable Architecture"],
       price: "Starting at $1,497"
     },
     {
-      icon: Bot,
-      title: "AI Agents & Chatbots",
-      description: "24/7 conversational AI agents for lead qualification and customer support.",
-      image: aiImg,
-      features: ["24/7 Support", "Lead Qualification", "Multi-Platform", "Custom Training"],
-      price: "Starting at $797/mo"
+      icon: Zap,
+      title: "AI-Driven Lead Generation", 
+      description: "Advanced targeting and conversion optimization powered by machine learning.",
+      image: leadGenImg,
+      features: ["Predictive Analytics", "Behavioral Targeting", "Automated Nurturing", "Performance Optimization"],
+      price: "Starting at $1,997"
+    },
+    {
+      icon: Globe,
+      title: "Futuristic Web Development",
+      description: "Next-generation websites with AI integration and advanced analytics.",
+      image: websiteImg,
+      features: ["AI Integration", "Progressive Web Apps", "Voice Interface", "Predictive UX"],
+      price: "Starting at $2,997"
     }
   ];
 
   return (
-    <section className="py-24 bg-gradient-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Everything You Need to 
-            <span className="bg-gradient-accent bg-clip-text text-transparent"> Scale Your Business</span>
+    <section className="py-24 bg-gradient-section relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20 animate-fade-in">
+          <h2 className="text-4xl md:text-6xl font-bold font-orbitron mb-8 text-transparent bg-gradient-primary bg-clip-text">
+            AI-Powered
+            <span className="text-neon"> Solutions</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From digital presence to backend automation, we provide comprehensive solutions 
-            that help small businesses compete with enterprise-level efficiency.
+          <p className="text-xl text-foreground/80 max-w-4xl mx-auto leading-relaxed font-poppins">
+            Transform your business with cutting-edge AI technologies designed for the future of automation.
           </p>
         </div>
 
